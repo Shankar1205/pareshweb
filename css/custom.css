@@ -1,0 +1,856 @@
+/* common CSS */
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff
+}
+.sectionPadding{
+    padding: 60px 0px;
+}
+.bgGrey {
+    background: #f2f2f2;
+}
+.section-title{
+    color: #001e55;
+    position: relative;
+    z-index: 1;
+}
+a:hover{
+    text-decoration: none;
+}
+.red-border{
+    border: 1px solid red;
+}
+.green-border{
+    border:1px solid green;
+}
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    opacity: 1;
+    z-index: 9999;
+}
+.fa-angle-down::before {
+    content: "\f107";
+}
+/* header Css */
+.headerTop {
+    color:white;
+    top: 0;
+    z-index: 9999;
+    background-color: #075285;
+    box-shadow: 0 8px 15px rgb(17 18 18 / 23%);
+    
+}
+.header-main #navbarNav li.nav-item a.nav-link{
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+.header-main #navbarNav li.nav-item a.nav-link{
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #051441;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    border-bottom: none;
+    position: relative;
+}
+.header-main #navbarNav li.nav-item a.nav-link.todayInsight{
+    background: #ddd;
+    border-radius: 6px;
+    padding: 5px 16px;
+    position: relative;
+}
+.header-main #navbarNav li.nav-item a.nav-link.todayInsight .navbar-badge{
+    background-color: orangered;
+    color:white;
+    position: absolute;
+    right: -10px;
+    top: -12px;
+}
+.header-main #navbarNav li.nav-item .menu{
+    position: absolute;
+    opacity: 1;
+    background: white;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+    top: 73px;  
+    display:none; 
+}
+.header-main #navbarNav li.nav-item .sub-menu{
+    position: absolute;
+    background: #fff;
+    top: 67px;
+    z-index: 99;
+    margin: 0px;
+    padding: 0px;
+    min-width: 225px;
+    border: solid 1px #eeeeee;
+    display:none;
+}
+.header-main #navbarNav li.nav-item .sub-menu a{
+    color: #666666;
+    border-right: 0 none;
+    text-align: left;
+    display: block;
+    line-height: 22px;
+    padding: 8px 12px;
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: normal;
+    border-right: 0px solid;
+    transition: 0.3s ease-in-out 0s;
+    border-bottom: 1px solid #ccc;
+}
+.header-main #navbarNav li.nav-item .sub-menu a:hover{
+    color: #206fbe;
+    text-decoration: none;
+    padding-left: 20px;
+    background-color: #f2f2f2;
+}
+.header-main #navbarNav li.nav-item .menu ul,.header-main #navbarNav li.nav-item ul.sub-menu{
+    list-style-type: none;
+    
+}
+.header-main #navbarNav li.nav-item .menu ul a{
+    line-height: 18px;
+    text-align: left;
+    padding: 6px 0px;
+    background: #fff;
+    background-image: none;
+    border-right: 0 none;
+    display: block;
+    background-color: #fff;
+    color: #424242;
+    display: flex;
+    font-size: 13px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover,.header-main #navbarNav li.nav-item .sub-menu a:hover{
+    color: #206fbe;;
+}
+.customIcon{
+    background-image: url(../images/icon-sprite.png);
+    height: 32px;
+    width: 38px;
+    background-repeat: no-repeat;
+    background-size: 135px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover .customIcon{
+    transition: all .33s ease;
+}
+#automotive-icon {
+    background-position: -4px -99px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #automotive-icon{
+    background-position: -49px -99px;
+}
+#business-icon {
+    background-position: -4px -464px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #business-icon{
+    background-position: -49px -464px;
+}
+#chemicals-icon {
+    background-position: -4px -564px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #chemicals-icon{
+    background-position: -49px -564px;
+}
+#cprofile-icon {
+    background-position: -4px -340px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #cprofile-icon{
+    background-position: -49px -340px;
+}
+#cgoods-icon {
+    background-position: -4px -584px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #cgoods-icon{
+    background-position: -49px -584px;
+}
+#defense-icon{
+    background-position: -4px -505px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #defense-icon{
+    background-position: -49px -505px;
+}
+#electronics-icon{
+    background-position: -4px -505px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #electronics-icon{
+    background-position: -49px -505px;
+}
+#energy-icon{
+    background-position: -4px -265px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #energy-icon{
+    background-position: -49px -265px;
+}
+#fservice-icon{
+    background-position: -4px -670px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #fservice-icon{
+    background-position: -49px -670px;
+}
+#beverages-icon{
+    background-position: -4px -302px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #beverages-icon{
+    background-position: -49px -302px;
+}
+#manscons-icon{
+    background-position: -4px -142px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #manscons-icon{
+    background-position: -49px -142px;
+}
+#meddevice-icon{
+    background-position: -4px -627px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #meddevice-icon{
+    background-position: -49px -627px;
+}
+
+#pack-icon{
+    background-position: -4px -382px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #pack-icon{
+    background-position: -49px -382px;
+}
+#ph-icon{
+    background-position: -4px -15px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #ph-icon{
+    background-position: -49px -15px;
+}
+#publicsec-icon{
+    background-position: -4px -223px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #publicsec-icon{
+    background-position: -49px -223px;
+}
+#tech-icon{
+    background-position: -4px -179px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #tech-icon{
+    background-position: -49px -179px;
+}
+#telwire-icon{
+    background-position: -4px -424px;
+}
+.header-main #navbarNav li.nav-item .menu ul a:hover #telwire-icon{
+    background-position: -49px -424px;
+}
+
+
+.headerTop a.highlightNumber{
+    padding: 0px 2px;
+    border-radius: 5px;
+    background:grey;
+    color: white;
+}
+.header-main .topFixedHeader .section-title{
+    font-size: 16px;
+    font-weight: normal;
+}
+.header-main .requestSampleBtn {
+    background: #3fb759;
+    color: #fff;
+    padding: 10px 36px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 2px solid #2da24c;
+    box-shadow: 12px 12px 24px rgb(12 84 27 / 63%);
+    border-radius: 0;
+}
+.header-main .requestSampleBtn:hover {
+    background: #fff;
+    color: #3fb759;
+}
+.breadCrum .list-inline-item a{
+    color:grey;
+    font-size: 13px;
+}
+.breadCrum .list-inline-item.active a{
+    color:#007bff;
+}
+
+/* Banner Css */
+.reportPageBanner{
+    background: url(../images/banner-home.jpg) 50% 100% no-repeat;
+    background-size: 100%;
+}
+.reportPageBanner .section-title {
+    font-size: 1.4rem;
+}
+.reportPageBanner .repInfoBlock ul li {
+    padding: 0.25rem 0.5rem;
+    background: #dce8f3;
+    border-radius: 3px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.reportPageBanner .requestSampleBtn {
+    background: #3fb759;
+    color: #fff;
+    padding: 12px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border: 2px solid #2da24c;
+    box-shadow: 12px 12px 24px rgb(12 84 27 / 63%);
+    border-radius: 0;
+}
+.reportPageBanner .requestSampleBtn:hover {
+    background: #fff;
+    color: #3fb759;
+}
+.reportPageBanner .brochure-icon{
+    max-width: 70px;
+}
+.reportPageBanner .repInfoBlock span {
+    font-size: 12px;
+}
+.reportPageBanner .repInfoBlock ul {
+    border-bottom: 1px solid #dce8f3;
+}
+
+/* report Decription */
+.reportDescription .reportDescriptionContent{
+    padding: .8rem;
+    line-height: 1.7rem;
+}
+.reportDescription .play-btns button {
+    background: transparent;
+    cursor: pointer;
+    color: #1261a5;
+    transition: all 0.3s ease;
+    border: 2px solid #1261a5;
+    border-radius: 4px;
+}
+.reportDescription .play-btns button .fas {
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+.reportDescription .play-btns button:hover {
+    background: #1261a5;
+    color: #fff;
+}
+
+.reportDescription .reportBuyBlock {
+    background: #001e55;
+}
+.reportDescription .reportBuyBlock h5::after{
+    content: "";
+    background-color: #fff;
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+.reportDescription .orangeButton {
+    background: #fe4f00;
+    color: #fff;
+    border-color: #fe4f00;
+}
+.reportDescription .orangeButton:hover {
+    background: #fff;
+    color: #fe4f00;
+    border-color: #fe4f00;
+}
+.reportDescription .btn:focus, .btn:hover {
+    text-decoration: none;
+}
+.reportDescription .bgGrey{
+    background: #f2f2f2;
+}
+.reportDescription .reportTablinksBlock a{
+    font-size: 14px;
+    color: #2f2f2f;
+    padding: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    transition: all 0.33s ease;
+}
+
+.reportDescription .reportTablinksBlock a.productApp{
+    background-color: #3498db;
+    box-shadow: 12px 12px 24px rgb(114 135 148);
+    transition: all 0.3s ease-in-out 0s;
+    color: #fff;
+    font-weight: 500;
+}
+
+.reportDescription .reportAssistanceBlock h5:after{
+    content: "";
+    background-color: grey;
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Product Section */
+
+.productType a.nav-link{
+    color: #2f2f2f ;
+    background-color: transparent;
+    opacity: 0.3;
+}
+.productType a.nav-link:hover{
+   opacity: 1;
+   color: #2f2f2f ;
+}
+.productType a.nav-link.show.active{
+    background-color: #fff !important;
+    opacity: 1;
+    color: #2f2f2f ;
+}
+span.numberBlock{
+    padding: 9px 15px;
+    border-radius: 100%;
+    background: #429BFF;
+    font-size: 16px;
+}
+.productType .tab-pane{
+    display: none;
+}
+.productType .tab-pane.show.active{
+    display: block;
+}
+.productType .ProductTab{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    box-shadow: 0 18px 36px rgb(0 0 0 / 10%);
+    min-height: 500px;
+}
+.productType .productLinks{
+    padding: 13px 0px;
+}
+.productType .benchmarkingTab{
+    background: url(../images/benchmarking-bg.jpg)50% 50% no-repeat #fff;
+    width: 100%;
+    box-shadow: 0 18px 36px rgb(0 0 0 / 10%);
+}
+.productType .marketTab{
+    background: url(../images/market-bg.jpg);
+    width: 100%;
+    box-shadow: 0 18px 36px rgb(0 0 0 / 10%);
+    background-position: center;
+}
+.productType .applicationTab{
+    background: url(../images/application-bg.jpg);
+    width: 100%;
+    box-shadow: 0 18px 36px rgb(0 0 0 / 10%);
+    background-position: center;
+}
+.productType .applicationTab li , .productType .marketTab li{
+    line-height: 10px;
+    -webkit-box-shadow: 6px 1px 25px -13px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 6px 1px 25px -13px rgba(0,0,0,0.75);
+    box-shadow: 6px 1px 25px -13px rgb(0 0 0 / 75%);
+}
+.productType .marketTab li:after {
+    content: '';
+    width: 36px;
+    height: 14px;
+    -webkit-box-shadow: 6px 1px 25px -13px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 6px 1px 25px -13px rgba(0,0,0,0.75);
+    box-shadow: 6px 1px 25px -13px rgb(0 0 0 / 75%);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    background: #CC0000;
+}
+.ProductTab.benchmarkingTab li {
+    
+    -webkit-animation: fadeInUp 0.5s ease-in-out 0s forwards;
+    animation: fadeInUp 0.5s ease-in-out 0s forwards;
+}
+.ProductTab.benchmarkingTab .circle-block {
+    border-radius: 50%;
+    display: block;
+    margin: 5px auto;
+}
+.ProductTab.benchmarkingTab .circle-block-1 {
+    width: 10px;
+    height: 10px;
+    background: #CC0000;
+}
+.ProductTab.benchmarkingTab .circle-block-12 {
+    width: 43px;
+    height: 43px;
+    background: #17914E;
+}
+.ProductTab.benchmarkingTab .circle-block-2 {
+    width: 13px;
+    height: 13px;
+    background: #17914E;
+}
+.ProductTab.benchmarkingTab .circle-block-11 {
+    width: 40px;
+    height: 40px;
+    background: #FFA800;
+}
+.ProductTab.benchmarkingTab .circle-block-3 {
+    width: 16px;
+    height: 16px;
+    background: #338EFF;
+}
+.ProductTab.benchmarkingTab .circle-block-10 {
+    width: 37px;
+    height: 37px;
+    background: #FF9333;
+}
+.ProductTab.benchmarkingTab .circle-block-4 {
+    width: 19px;
+    height: 19px;
+    background: #FF9333;
+}
+.ProductTab.benchmarkingTab .circle-block-9 {
+    width: 34px;
+    height: 34px;
+    background: #338EFF;
+}
+.ProductTab.benchmarkingTab .circle-block-5 {
+    width: 22px;
+    height: 22px;
+    background: #FFA800;
+}
+.ProductTab.benchmarkingTab .circle-block-8 {
+    width: 31px;
+    height: 31px;
+    background: #17914E;
+}
+.ProductTab.benchmarkingTab .circle-block-8 {
+    width: 31px;
+    height: 31px;
+    background: #17914E;
+}
+.ProductTab.benchmarkingTab .circle-block-6 {
+    width: 25px;
+    height: 25px;
+    background: #B533FF;
+}
+.ProductTab.benchmarkingTab .circle-block-7 {
+    width: 28px;
+    height: 28px;
+    background: #5D5D5D;
+}
+/* Enquiry section */
+.enquiry {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #001e55 0%, #3498db 100%);
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.enquiry .enquiryBtn{
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 36px;
+    font-size: 18px;
+    transition: all 0.33s ease
+}
+
+.enquiry .enquiryBtn:hover {
+    background: #fff;
+    color: #2A6FB7;
+}
+
+/* Table of contents */
+.tableOfContent{
+    padding:60px 0;
+}
+.tableOfContent a.nav-link{
+    margin-right: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 10%);
+    color: #2f2f2f;
+    font-size: 15px;
+    padding: 1rem;
+    position: relative;
+}
+.tableOfContent .active a.nav-link{
+    padding-bottom: 1.7rem;
+    margin-bottom: 0;
+    box-shadow: -1px -1px 10px rgb(0 0 0 / 10%);
+    color: #2A6FB7;
+    font-weight: 600;
+    z-index: 1;
+    border-radius: .25rem .25rem 0 0;
+}
+.tableOfContent .tab-content{
+    padding: 30px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 25%);
+    line-height: 2em;
+    margin: 0px 30px;
+}
+.tableOfContent .TocButton{
+    background: #1261a5;
+    color: #fff;
+    padding: 10px 24px;
+    border: 2px solid #1261a5;
+    font-weight: 500;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+}
+.tableOfContent .TocButton:hover{
+    color: #1261a5;
+    background: #fff;
+}
+
+/* Success Stories */
+.successStories #testimonialsCarousel{
+    border: 1px solid #ddd;
+}
+.successStories .testimonialsCarousel .blockquote {
+    padding: 30px;
+    color: #69758f;
+}
+.successStories .testimonialsCarousel .blockquote p {
+    line-height: 1.75rem;
+    font-size: 1.05rem;
+}
+
+/* PopularReports */
+.popularReports .border-right{
+    border-right: 1px solid #dde2ec;
+}
+
+.w-40{
+    width:40%;
+}
+.popularReports .machineryItem{
+    padding: 1rem 2rem 1rem 1rem;
+    border-bottom: 1px dotted #ddd;
+}
+.popularReports .machineryContent .content-title{
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #69758f;
+}
+
+.popularReports .machineryContent a{
+    font-size: 1rem;
+    color: #2f2f2f;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+/* footer */
+footer{
+    background-color: #182B3E;
+    padding-top: 20px;
+    background-image: url(../images/footerbg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 60px 0px 8px 0px;
+}
+footer .mainFooter .footerLinks li {
+    margin-bottom: 8px;
+}
+footer a{
+    color: #fff;
+    font-size: 11px;
+}
+footer .copyrightSection{
+    border-top: 1px solid black;
+}
+footer .copyrightSection,footer .copyrightSection a{
+    font-size: 12px;
+    color: #666;
+}
+#scroll {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    z-index: 99999;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    color: white;
+}
+#scroll .fas{
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    font-size: x-large;
+}
+@media (min-width:768px) and (max-width:1024px){
+    .productType .ProductTab{
+        min-height: 660px;
+    }
+    .reportPageBanner .section-title {
+        font-size: 1.2rem;
+    }
+    .repInfoBlock{
+        margin-top: 0px !important;
+    }
+    .reportPageBanner .repInfoBlock span {
+        font-size: 11px;
+    }
+    .reportPageBanner .requestSampleBtn{
+        font-size: 14px;
+        padding: 12px 38px;
+    }
+    .reportDescriptionContent h2.section-title{
+        font-size: 1.8rem;
+    }
+    .reportAssistanceBlock  p.h2{
+        font-size: 1.8rem;
+    }
+    .productType .applicationTab li, .productType .marketTab li{
+        margin: 0px !important;
+    }
+    .ProductTab.benchmarkingTab li{
+        margin: 12px !important;
+        padding: 0px !important;
+    }
+    .productType a.nav-link{
+        padding: 16px;
+    }
+    .tableOfContent a.nav-link,.tableOfContent a.nav-link:hover{
+        font-size: 14px;
+    }
+}
+@media (max-width:767px){
+    .body{
+        font-size: 0.7rem !important;
+        line-height: 1;
+    }
+    .headerTop a{
+        font-size: 12px;
+    }
+    .breadCrum a{
+        font-size:12px !important;
+    }
+    .reportPageBanner {
+        background: url(../images/banner-home.jpg) 66% 25% no-repeat;
+        background-size: cover;
+    }
+    .reportPageBanner .section-title,.header-main .topFixedHeader .section-title {
+        font-size: 0.9rem;
+    }
+    .reportPageBanner .repInfoBlock span {
+        font-size: 10px;
+    }
+    .reportPageBanner .requestSampleBtn,.header-main .requestSampleBtn{
+        padding: 12px 33px;
+        font-size: 13px;
+    }
+    .reportDescriptionContent h2{
+        font-size: 1.5rem;
+    }
+    .requestSampleBlock{
+        text-align: center;
+    }
+
+    .reportBuyBlock h5{
+        font: 1.1rem;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .orangeButton{
+        font-size: 13px;
+        padding: 10px 0px !important;
+    }
+    .reportDescription .reportTablinksBlock a{
+        font-size: 12px;
+        padding: 0.8rem;
+        padding: 2rem 0.9 !important;
+    }
+    .reportAssistanceBlock{
+        padding-top: 1rem;
+        padding-bottom: 0.7rem;
+    }
+    h5.section-title{
+        font-size: 1rem;
+    }
+    .reportAssistanceBlock p{
+        font-size:0.9rem
+    }
+    h2.section-title{
+        font-size: 1.75rem;
+    }
+    .productType .container-fluid{
+        padding: 0px;
+    }
+    .productLinks .product p{
+        font-size: 0.8rem;
+    }
+    .productType .ProductTab{
+        background-size: cover;
+    }
+    .ProductTab.benchmarkingTab li{
+        padding: 6px !important;
+        margin: 7px !important;
+        font-size: 15px;
+    }
+    .enquiry{
+        padding: 30px 0px;
+    }
+    .enquiry h2{
+        font-size: 1.3rem;
+    }
+    .enquiry .enquiryBtn{
+        padding: 9px 30px;
+        font-size: 14px;
+    }
+    .tableOfContent .col-4{
+        padding: 0px;
+    }
+    .tableOfContent a.nav-link{
+        font-size: 12px;
+    }
+    .tableOfContent .tab-content{
+        margin: 0px 15px;
+        padding: 20px;  
+    }
+    .tableOfContent .tab-content .innerTabContent{
+        font-size: 0.8rem;
+    }
+    .tableOfContent .TocButton{
+        font-size: 0.8rem;
+    }
+    .sectionPadding {
+        padding: 15px 0px;
+    }
+    .successStories .testimonialsCarousel .blockquote{
+        padding: 18px;
+    }
+    .successStories .testimonialsCarousel .blockquote p{
+        font-size: 0.8rem;
+    }
+    .client div{
+        text-align: center;
+    }
+    .popularReports div.col-12{
+        padding-top: 20px;
+    }
+    h3.section-title{
+        text-align: center;
+    }
+}
