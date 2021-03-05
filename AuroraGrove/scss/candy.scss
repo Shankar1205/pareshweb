@@ -1,0 +1,75 @@
+@import "../scss/custom_bootstrap.scss";
+
+body{
+    font-family:"Montserrat",sans-serif;
+    background: #f5d9df;
+}
+.row{
+    margin: 0px;
+}
+.row > div{
+    padding: 0px !important;
+}
+.navbar{
+    font-weight:100;
+    position: absolute;
+    top: 0;
+    right:0;
+    left: 0;
+    z-index: 1;
+    font-size: 1.5rem;
+    .navbar-brand h3{
+        font-weight:400;
+        color:#ea1c2c;
+        font-size: 1.5rem;
+    }
+    .navbar-toggler{
+        outline:0;
+    }
+    .nav-item {
+        font-size:1.4rem;
+        color:white;
+    }
+
+    .nav-link:hover{
+        transition: border 0.2s;
+        color: #ea1c2c !important;
+    }
+
+}
+#section1{
+    h1{
+        font-weight: 100;
+        font-size: 2rem;
+    }
+    .red{
+        color: #ea1c2c;
+    }
+}
+
+#section2{
+    h1{
+        font-weight: 100;
+        font-size: 2rem;
+    }
+    .red{
+        color: #ea1c2c;
+    }
+}
+
+@media (max-width:1200px){
+    #section1{
+        h1{
+            font-weight: 100;
+            font-size: 1.2rem;
+        }
+        
+    }
+    #section2{
+        h1{
+            font-weight: 100;
+            font-size: 1.2rem;
+        }
+        
+    }
+}

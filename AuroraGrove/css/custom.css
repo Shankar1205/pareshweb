@@ -1,0 +1,65 @@
+body {
+  font-family: "Montserrat",sans-serif; }
+
+.navbar {
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1; }
+  .navbar .navbar-brand h3 {
+    font-weight: 100; }
+  .navbar .navbar-toggler {
+    outline: 0; }
+  .navbar .nav-item {
+    font-size: 1.4rem; }
+  .navbar .nav-link:hover {
+    border-bottom: 1px solid white;
+    transition: border 0.2s; }
+
+#showcase {
+  background: url("/images/unnamed.jpg") bottom center/cover no-repeat;
+  min-height: 550px;
+  position: relative; }
+  #showcase #header {
+    z-index: 1; }
+  #showcase #overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+  #showcase h3 {
+    font-weight: 100; }
+  #showcase h1 {
+    font-weight: 400;
+    line-height: 1; }
+  #showcase .btn {
+    border-radius: 30px;
+    font-size: 1.4rem; }
+
+.card-sec h3 {
+  font-size: 1.6rem;
+  font-weight: 600; }
+.card-sec .card-title {
+  font-weight: 500; }
+
+#quotes i {
+  opacity: 0.3; }
+
+#footer {
+  background: #1f1f1f; }
+  #footer a {
+    font-weight: 100; }
+
+@media (max-width: 768px) {
+  .navbar .nav-link:hover {
+    border-bottom: 1px solid transparent; }
+
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 4rem; } }
